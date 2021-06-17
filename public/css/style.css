@@ -1,24 +1,91 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+.header-style {
+  background-color: lightseagreen;
+  color: black;
+  padding: 30px;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+nav a {
+  font-size: large;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.header-box {
+  background-color: lightskyblue;
+  margin: 10px;
+  width: 360px;
+  opacity: 0.8;
+  text-align: center;
   text-decoration: none;
-  font-size: 100%;
+  box-shadow: 6px 5px grey;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+.header-txt {
+  margin: 10px;
+  padding: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
 }
-/* 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px; 
-} */
+
+body {
+  background-color: seashell;
+}
+
+.log-form {
+  border: black;
+  border-style: double;
+  background-color: seashell;
+}
+
+.sign-form {
+  border: black;
+  border-style: double;
+  background-color: seashell;
+}
+
+.new-post {
+  background-color: lightseagreen;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.list-group {
+  padding: 1%;
+}
+
+.main-list {
+  color: aliceblue;
+  margin-bottom: 20px;
+  padding: 2.5%;
+  border-radius: 20px;
+  background-color: lightseagreen;
+  text-decoration: none;
+}
+
+.content-card {
+  padding: 2%;
+  text-decoration: none;
+  background-color: seashell;
+  color: black;
+}
+
+.dashboard-card {
+  color: seashell;
+  border: lightseagreen;
+  border-style: groove;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
+}
+
+.comment-card {
+  color: seashell;
+  border: lightseagreen;
+  border-style: groove;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
+}
+
+.single-post {
+  padding: 0.75rem 1.25rem;
+}
