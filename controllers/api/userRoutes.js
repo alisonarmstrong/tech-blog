@@ -7,11 +7,11 @@ router.post('/', async (req, res) => {
       name: req.body.name,
       password: req.body.password,
     });
-
+console.log(userData)
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      req.statusCode(200).json(userData);
+      res.status(200).json(userData);
     })
   } catch (error) {
     res.status(400).json(error);

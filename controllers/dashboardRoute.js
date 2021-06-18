@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async, (req,res) => {
+router.get('/', withAuth, async (req,res) => {
     try {
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
@@ -19,7 +19,7 @@ router.get('/', withAuth, async, (req,res) => {
     }
 });
 
-router.get('/newpost', withAith, (req,res) => {
+router.get('/newpost', withAuth, (req,res) => {
     try {
         if(req.session.logged_in) {
             res.render('new-post',{
